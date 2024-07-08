@@ -1,9 +1,12 @@
-import "./NewArrivals.css"
+import "./MenCollection.css"
 
 const MenCollection = () => {
 	return (
-		<div className="container-n-a">
-			<h1 className="heading">NEW ARRIVALS</h1>
+		<div className="container-c">
+			<div className="heading">
+				<p className="heading1">men</p>
+				<h1 className="heading2">COLLECTION</h1>
+			</div>
 			<div className="content">
 				<div className="main-image">
 					<img src="./images/Frame-1000003467.png" alt="Latest arrivals" />

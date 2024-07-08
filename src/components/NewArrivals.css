@@ -22,6 +22,7 @@
 .container-n-a .content img {
 	width: 100%;
 	object-fit: cover;
+    /* max-width: 70%; */
 }
 /* .container-n-a .content > div {
   box-sizing: border-box;
@@ -32,31 +33,36 @@
 .container-n-a .image3,
 .container-n-a .image4 {
     padding: 1rem;
-    border: 1px solid;
+    border: 0.5px solid #BDBDBD;
 }   
 .container-n-a .main-image {
 	grid-area: main-image;
-	border-right: 0px;
 }
 
 .container-n-a .image1 {
 	grid-area: image1;
-	border-right: 0px;
-	border-bottom: 0px;
 }
 .container-n-a .image2 {
 	grid-area: image2;
-	border-bottom: 0px;
 }
 .container-n-a .image3 {
 	grid-area: image3;
-	border-right: 0px;
 }
 .container-n-a .image4 {
 	grid-area: image4;
 }
 .container-n-a .love-btn {
-	width: 1.5rem;
+	width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: #F4F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-n-a .love-btn img{
+    max-width: 60%;
 }
 .container-n-a .details {
 	text-align: start;

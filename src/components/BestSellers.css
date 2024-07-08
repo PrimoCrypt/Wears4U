@@ -1,8 +1,9 @@
 .container-bs{
-    padding: 4rem 5rem 0;
+    padding: 4rem 7rem 0;
     text-align: center;
     background: #F7F5E9;
     color: #292929;
+    padding-bottom: 8rem;
 }
 
 .container-bs .heading{
@@ -14,18 +15,29 @@
     display: grid;
     /* gap: 2rem; */
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-rows: 0.5fr 0.5fr; */
     /* grid-template-areas: 
         "main-image image1 image2"
         "main-image image3 image4"; */
 }   
 .container-bs .content img {
+    max-width: 15rem;
 	width: 100%;
 	object-fit: cover;
 }
 
 .container-bs .love-btn {
-	width: 1.5rem;
+	width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: #F4F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-bs .love-btn img{
+    max-width: 60%;
 }
 
 .container-bs .image1,
@@ -38,4 +50,29 @@
 .container-bs .image8 {
     padding: 1rem;
     border: 0.5px solid #BDBDBD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }   
+.container-bs .image1 .love-btn,
+.container-bs .image2 .love-btn,
+.container-bs .image3 .love-btn,
+.container-bs .image4 .love-btn,
+.container-bs .image5 .love-btn,
+.container-bs .image6 .love-btn,
+.container-bs .image7 .love-btn,
+.container-bs .image8 .love-btn{
+    align-self: flex-end;
+}
+.container-bs .image1 .details,
+.container-bs .image2 .details,
+.container-bs .image3 .details,
+.container-bs .image4 .details,
+.container-bs .image5 .details,
+.container-bs .image6 .details,
+.container-bs .image7 .details,
+.container-bs .image8 .details{
+    align-self: flex-start;
+    text-align: left;
+}

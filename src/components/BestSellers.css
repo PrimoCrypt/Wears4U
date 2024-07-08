@@ -1,0 +1,41 @@
+.container-bs{
+    padding: 4rem 5rem 0;
+    text-align: center;
+    background: #F7F5E9;
+    color: #292929;
+}
+
+.container-bs .heading{
+    font-size: 7rem;
+    margin: 0;
+}
+
+.container-bs .content{
+    display: grid;
+    /* gap: 2rem; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-areas: 
+        "main-image image1 image2"
+        "main-image image3 image4"; */
+}   
+.container-bs .content img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.container-bs .love-btn {
+	width: 1.5rem;
+}
+
+.container-bs .image1,
+.container-bs .image2,
+.container-bs .image3,
+.container-bs .image4,
+.container-bs .image5,
+.container-bs .image6,
+.container-bs .image7,
+.container-bs .image8 {
+    padding: 1rem;
+    border: 0.5px solid #BDBDBD;
+}   

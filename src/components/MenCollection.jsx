@@ -1,6 +1,6 @@
 import "./NewArrivals.css"
 
-const NewArrivals = () => {
+const MenCollection = () => {
 	return (
 		<div className="container-n-a">
 			<h1 className="heading">NEW ARRIVALS</h1>
@@ -49,8 +49,8 @@ const NewArrivals = () => {
 					</div>
 				</div>
 			</div>
-            <p style={{textAlign: "right", margin: 0}}>see all</p>
+			<p style={{ textAlign: "right" }}>see all</p>
 		</div>
 	)
 }
-export default NewArrivals
+export default MenCollection

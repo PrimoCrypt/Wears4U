@@ -61,7 +61,9 @@ const CheckoutView = () => {
 								<div className="each-address">
 									<div className="each-address-select">
 										<input type="radio" id="address-1" name="address" />
-										<label htmlFor="address-1">Shop Pick Up(Shop at Chevron drive)</label>
+										<label htmlFor="address-1">
+											Shop Pick Up(Shop at Chevron drive)
+										</label>
 									</div>
 									<p className="each-address-price">Free</p>
 								</div>
@@ -75,21 +77,27 @@ const CheckoutView = () => {
 								<div className="each-address">
 									<div className="each-address-select">
 										<input type="radio" id="address-1" name="address" />
-										<label htmlFor="address-1">Outside Nigeria(International Shipping)</label>
+										<label htmlFor="address-1">
+											Outside Nigeria(International Shipping)
+										</label>
 									</div>
 									<p className="each-address-price">$3.80</p>
 								</div>
 								<div className="each-address">
 									<div className="each-address-select">
 										<input type="radio" id="address-1" name="address" />
-										<label htmlFor="address-1">Epe, Badagry, Ikorodu, Ibuje Lekki</label>
+										<label htmlFor="address-1">
+											Epe, Badagry, Ikorodu, Ibuje Lekki
+										</label>
 									</div>
 									<p className="each-address-price">$50.00</p>
 								</div>
 								<div className="each-address">
 									<div className="each-address-select">
 										<input type="radio" id="address-1" name="address" />
-										<label htmlFor="address-1">Abuja and All Northern States</label>
+										<label htmlFor="address-1">
+											Abuja and All Northern States
+										</label>
 									</div>
 									<p className="each-address-price">$4.10</p>
 								</div>
@@ -107,6 +115,7 @@ const CheckoutView = () => {
 					</div>
 
 					<div className="items">
+						<h2 className="order-summary">Order Summary</h2>
 						<div className="item">
 							<div className="item-detail">
 								<img src="./images/image541.png" alt="" />

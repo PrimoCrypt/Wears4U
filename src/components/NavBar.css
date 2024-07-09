@@ -119,6 +119,12 @@
 	}
 }
 @media screen and (max-width: 540px) {
+	.navbar .logo-text{
+		font-size: 1rem;
+	}
+	.navbar .logo-text .u{
+		font-size: 1.1rem;
+	}
 	.options{
 		width: 25vw;
 		justify-content: space-between;

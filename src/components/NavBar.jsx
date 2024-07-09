@@ -16,12 +16,25 @@ const NavBar = () => {
 				</div>
 				<div className="logo">
 					<img src="./images/icons/logo.png" alt="" />
-					<Link to="/"><p className="logo-text">Wears4<span className="u">U</span></p></Link>
+					<Link to="/">
+						<p className="logo-text">
+							Wears4<span className="u">U</span>
+						</p>
+					</Link>
 				</div>
 				<div className="options">
-					<a href="#">SEARCH</a>
-					<a href="#">ACCOUNT</a>
-					<Link to="/cart">CART(4)</Link>
+					<a href="#">
+						<span className="search">SEARCH</span>
+						<span className="search-icon"><img src="./images/icons/search-normal.png" alt="" /></span>
+					</a>
+					<a href="#">
+						<span className="account">ACCOUNT</span>
+						<span className="profile-icon"><img src="./images/icons/profile.png"/></span>
+					</a>
+					<Link to="/cart">
+						<span className="cart">CART(4)</span>
+						<span className="cart-icon"><img src="./images/icons/shopping-cart.png" alt="" /></span>
+					</Link>
 				</div>
 			</div>
 		</div>

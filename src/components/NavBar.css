@@ -40,8 +40,8 @@
 	font-size: 30px;
 	font-weight: 600;
 }
-.navbar .logo a{
-    margin: 0;
+.navbar .logo a {
+	margin: 0;
 }
 .navbar .logo-text .u {
 	font-size: 30px;
@@ -71,4 +71,23 @@
 }
 .options a:first-child {
 	margin-left: 0;
+}
+.options .search-icon,
+.options .profile-icon,
+.options .cart-icon {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.options .search,
+	.options .account,
+	.options .cart {
+		display: none;
+	}
+	.options .search-icon,
+	.options .profile-icon,
+	.options .cart-icon {
+		display: inline;
+		margin-left: 1.5rem;
+	}
 }

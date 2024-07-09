@@ -2,6 +2,7 @@ import "./App.css"
 import BestSellers from "./components/BestSellers.jsx"
 import BlogView from "./components/BlogView.jsx"
 import Categories from "./components/Categories.jsx"
+import Footer from "./components/Footer.jsx"
 import MainView from "./components/MainView.jsx"
 import MenCollection from "./components/MenCollection.jsx"
 import NavBar from "./components/NavBar"
@@ -19,6 +20,7 @@ const App = () => {
 			<MenCollection/>
 			<WomenCollection />
 			<Categories/>
+			<Footer/>
 		</div>
 	)
 }

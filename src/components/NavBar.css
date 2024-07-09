@@ -33,6 +33,14 @@
 	font-size: 1.05rem;
 	font-weight: 400;
 }
+.navbar a:hover{
+	color: #a74107;
+	border-bottom: 1px solid #a74107;
+}
+.navbar a:active{
+	color: #632400;
+}
+
 .navbar .logo {
 	display: flex;
 	flex-direction: column;

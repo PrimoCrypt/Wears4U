@@ -49,6 +49,9 @@
 }
 .navbar .logo img {
 	width: 2rem;
+	position: relative;
+
+	top: 1rem;
 }
 .navbar .logo-text {
 	color: black;

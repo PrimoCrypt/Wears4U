@@ -1,26 +1,29 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./App.css"
-import BestSellers from "./components/BestSellers.jsx"
-import BlogView from "./components/BlogView.jsx"
-import Categories from "./components/Categories.jsx"
-import Footer from "./components/Footer.jsx"
-import MainView from "./components/MainView.jsx"
-import MenCollection from "./components/MenCollection.jsx"
-import NavBar from "./components/NavBar"
-import NewArrivals from "./components/NewArrivals.jsx"
-import WomenCollection from "./components/WomenCollection.jsx"
+import HomePage from "./pages/HomePage"
+import CartPage from "./pages/CartPage"
+import CheckoutView from "./components/CheckoutView"
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <HomePage />,
+	},
+	{
+		path: "/cart",
+		element: <CartPage/>,
+	},
+	{
+		path: "/checkout",
+		element: <CheckoutView/>
+		
+	}
+])
 
 const App = () => {
 	return (
 		<div className="app">
-			<NavBar />
-			<MainView />
-			<NewArrivals />
-			<BestSellers />
-			<BlogView/>
-			<MenCollection/>
-			<WomenCollection />
-			<Categories/>
-			<Footer/>
+			<RouterProvider router={router} />
 		</div>
 	)
 }

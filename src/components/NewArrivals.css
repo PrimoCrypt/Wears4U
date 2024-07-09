@@ -6,35 +6,42 @@
 }
 
 .container-n-a .heading {
-	font-size: 7rem;
+	font-size: 10vw;
 	margin: 0;
 }
 
 .container-n-a .content {
 	display: grid;
 	grid-template-columns: 1fr 0.5fr 0.5fr;
-	/* grid-template-rows: 1fr 1fr; */
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 		"main-image image1 image2"
 		"main-image image3 image4";
 }
-
-.container-n-a .content img {
-	width: 100%;
-	object-fit: cover;
-    /* max-width: 70%; */
+.container-n-a .content .main-image img{
+	max-width: 100%;
+	max-height: 100%;
 }
-/* .container-n-a .content > div {
-  box-sizing: border-box;
-} */
+.container-n-a .content img {
+	max-width: 12rem;
+	max-height: 14rem;
+	height: 100%;
+	width: auto;
+	object-fit: cover;
+}
+
 .container-n-a .main-image,
 .container-n-a .image1,
 .container-n-a .image2,
 .container-n-a .image3,
 .container-n-a .image4 {
-    padding: 1rem;
-    border: 0.5px solid #BDBDBD;
-}   
+	padding: 1rem;
+	border: 0.5px solid #bdbdbd;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
 .container-n-a .main-image {
 	grid-area: main-image;
 }
@@ -52,20 +59,47 @@
 	grid-area: image4;
 }
 .container-n-a .love-btn {
+	align-self: flex-end;
 	width: 2.5rem;
-    height: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	background-color: #f4f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-n-a .love-btn img {
+	  max-width: 60%;
+	  height: auto;
+}
+.container-n-a .details {
+	align-self: flex-end;
+    text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+}
+.container-n-a .item-price{
+	font-weight: 600;
+	transform: scaleY(1.2);
+}
+
+.container-n-a .details .lower-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.container-n-a .lower-section img {
+	max-width: 3rem;
+	max-height: 1.3rem;
+	height: 100%;
+	width: auto;
+	object-fit: cover;
     border-radius: 100%;
     background-color: #F4F1F1;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.container-n-a .love-btn img{
-    max-width: 60%;
-}
-.container-n-a .details {
-	text-align: start;
-	height: 20%;
-	bottom: 0;
 }

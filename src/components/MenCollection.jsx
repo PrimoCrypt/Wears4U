@@ -9,7 +9,10 @@ const MenCollection = () => {
 			</div>
 			<div className="content">
 				<div className="main-image">
-					<img src="./images/men-collection/image63.png" alt="Latest arrivals" />
+					<img
+						src="./images/men-collection/image63.png"
+						alt="Latest arrivals"
+					/>
 				</div>
 				<div className="image1">
 					<div className="love-btn">
@@ -18,7 +21,10 @@ const MenCollection = () => {
 					<img src="./images/men-collection/image631.png" alt="" />
 					<div className="details">
 						<p className="item-name">QUIET LUXURY HOODIE</p>
-						<p className="item-price">$500</p>
+						<div className="lower-section">
+							<p className="item-price">$500</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image2">
@@ -28,7 +34,10 @@ const MenCollection = () => {
 					<img src="./images/men-collection/image47_1.png" alt="" />
 					<div className="details">
 						<p className="item-name">LEATHER BIKER JACKET</p>
-						<p className="item-price">$128</p>
+						<div className="lower-section">
+							<p className="item-price">$128</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image3">
@@ -38,7 +47,10 @@ const MenCollection = () => {
 					<img src="./images/men-collection/image46_1.png" alt="" />
 					<div className="details">
 						<p className="item-name">BERSHKA CAPRI HOODIE</p>
-						<p className="item-price">$23</p>
+						<div className="lower-section">
+							<p className="item-price">$23</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image4">
@@ -48,7 +60,10 @@ const MenCollection = () => {
 					<img src="./images/men-collection/image61.png" alt="" />
 					<div className="details">
 						<p className="item-name">BROWN JOGGERS</p>
+						<div className="lower-section">
 						<p className="item-price">$26</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>

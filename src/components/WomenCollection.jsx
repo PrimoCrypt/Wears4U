@@ -21,7 +21,10 @@ const WomenCollection = () => {
 					<img src="./images/women-collection/image47_1.png" alt="" />
 					<div className="details">
 						<p className="item-name">LEATHER BIKER JACKET</p>
-						<p className="item-price">$128</p>
+						<div className="lower-section">
+							<p className="item-price">$128</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image2">
@@ -31,7 +34,10 @@ const WomenCollection = () => {
 					<img src="./images/women-collection/image562.png" alt="" />
 					<div className="details">
 						<p className="item-name">QUIET LUXURY HOODIE</p>
-						<p className="item-price">$500</p>
+						<div className="lower-section">
+							<p className="item-price">$500</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image3">
@@ -41,7 +47,10 @@ const WomenCollection = () => {
 					<img src="./images/women-collection/image561.png" alt="" />
 					<div className="details">
 						<p className="item-name">BROWN SWEATER</p>
-						<p className="item-price">$126</p>
+						<div className="lower-section">
+							<p className="item-price">$126</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image4">
@@ -51,7 +60,10 @@ const WomenCollection = () => {
 					<img src="./images/women-collection/image56.png" alt="" />
 					<div className="details">
 						<p className="item-name">PATAGONIA COAT</p>
-						<p className="item-price">$699</p>
+						<div className="lower-section">
+							<p className="item-price">$699</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>

@@ -12,7 +12,10 @@ const BestSellers = () => {
 					<img src="./images/image54.png" alt="" />
 					<div className="details">
 						<p className="item-name">TEE SHIRT</p>
-						<p className="item-price">$19</p>
+						<div className="lower-section">
+							<p className="item-price">$19</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image2">
@@ -22,7 +25,10 @@ const BestSellers = () => {
 					<img src="./images/image591.png" alt="" />
 					<div className="details">
 						<p className="item-name">CARTON PANT</p>
-						<p className="item-price">$29</p>
+						<div className="lower-section">
+							<p className="item-price">$29</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image3">
@@ -32,7 +38,10 @@ const BestSellers = () => {
 					<img src="./images/image48.png" alt="" />
 					<div className="details">
 						<p className="item-name">BURBERRY BARREL BAG</p>
-						<p className="item-price">$1800</p>
+						<div className="lower-section">
+							<p className="item-price">$1800</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image4">
@@ -42,7 +51,10 @@ const BestSellers = () => {
 					<img src="./images/image541.png" alt="" />
 					<div className="details">
 						<p className="item-name">BOMBER SWEATER</p>
-						<p className="item-price">$249</p>
+						<div className="lower-section">
+							<p className="item-price">$249</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image5">
@@ -52,7 +64,10 @@ const BestSellers = () => {
 					<img src="./images/image59.png" alt="" />
 					<div className="details">
 						<p className="item-name">GUCCI VANITY BAG</p>
-						<p className="item-price">$2200</p>
+						<div className="lower-section">
+							<p className="item-price">$2200</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image6">
@@ -62,7 +77,10 @@ const BestSellers = () => {
 					<img src="./images/image601.png" alt="" />
 					<div className="details">
 						<p className="item-name">GiINGHAM SHOERT</p>
-						<p className="item-price">$80</p>
+						<div className="lower-section">
+							<p className="item-price">$80</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image7">
@@ -72,7 +90,10 @@ const BestSellers = () => {
 					<img src="./images/image60.png" alt="" />
 					<div className="details">
 						<p className="item-name">STIO WOMEN&apos;S COLTER</p>
-						<p className="item-price">$53</p>
+						<div className="lower-section">
+							<p className="item-price">$53</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="image8">
@@ -82,7 +103,10 @@ const BestSellers = () => {
 					<img src="./images/image481.png" alt="" />
 					<div className="details">
 						<p className="item-name">Calvin Klein Metal Cap</p>
-						<p className="item-price">$53</p>
+						<div className="lower-section">
+							<p className="item-price">$53</p>
+							<img src="./images/icons/shopping-cart.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>

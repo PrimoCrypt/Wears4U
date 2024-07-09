@@ -7,7 +7,7 @@
 }
 
 .container-bs .heading{
-    font-size: 7rem;
+    font-size: 10vw;
     margin: 0;
 }
 
@@ -26,7 +26,7 @@
 	object-fit: cover;
 }
 
-.container-bs .love-btn {
+/* .container-bs .love-btn {
 	width: 2.5rem;
     height: 2.5rem;
     border-radius: 100%;
@@ -34,11 +34,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.container-bs .love-btn img{
-    max-width: 60%;
-}
 
 .container-bs .image1,
 .container-bs .image2,
@@ -64,7 +61,18 @@
 .container-bs .image7 .love-btn,
 .container-bs .image8 .love-btn{
     align-self: flex-end;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #F4F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.container-bs .love-btn img{
+    max-width: 60%;
+}
+
 .container-bs .image1 .details,
 .container-bs .image2 .details,
 .container-bs .image3 .details,
@@ -73,6 +81,36 @@
 .container-bs .image6 .details,
 .container-bs .image7 .details,
 .container-bs .image8 .details{
-    align-self: flex-start;
+    align-self: flex-end;
     text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+}
+.container-bs .details .item-name{
+    font-size: 0.7rem;
+}
+
+.container-bs .item-price{
+	font-weight: 600;
+	transform: scaleY(1.1);
+}
+
+.container-bs .details .lower-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.container-bs .lower-section img {
+	max-width: 3rem;
+	max-height: 1.3rem;
+	height: 100%;
+	width: auto;
+	object-fit: cover;
+    border-radius: 100%;
+    background-color: #F4F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

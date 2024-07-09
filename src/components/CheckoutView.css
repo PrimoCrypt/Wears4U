@@ -1,0 +1,194 @@
+.container-checkout {
+	padding: 0 1rem 0 2rem;
+	text-align: center;
+	background: #f7f5e9;
+	color: #292929;
+	width: 60vw;
+	float: right;
+}
+
+.container-checkout .top-section {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+.container-checkout .top-section .left {
+	display: flex;
+	align-items: center;
+}
+.container-checkout .cart-identifier {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container-checkout .top-section .initial-progress {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #a74107;
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	color: white;
+}
+.container-checkout .top-section .progress {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff00;
+	border: 1px solid #00000066;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+}
+.container-checkout .top-section .inactive {
+	padding-top: 20px;
+}
+.container-checkout .top-section .right {
+	display: flex;
+	align-items: center;
+}
+.container-checkout .top-section .right img {
+	margin: 0 1vw;
+}
+.container-checkout .top-section .clear-cart,
+.container-checkout .top-section .title-text {
+    font-weight: 300px;
+    font-size: 1.1vw;
+}
+.container-checkout .main-section{
+    margin-top: 3rem;
+}
+.container-checkout .shipping-address {
+    text-align: left;
+}
+.address-select {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  /* align-items: center; */
+}
+.each-address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.each-address-select{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.each-address-select input{
+    margin-right: 1rem;
+}
+.each-address-price{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.address-select label {
+  display: flex;
+  align-items: center;
+}
+
+.address-select label span {
+  font-size: 18px;
+}
+/* .container-cart .main-section{
+
+} */
+ .container-checkout .items{
+
+    margin-right: 3rem;
+}
+
+.container-checkout .main-section .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid #00000033;
+    padding-right: 9px;
+    margin-top: 3rem;
+}
+
+.container-checkout .main-section .item .item-detail{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+}
+.container-checkout .main-section .item img{
+    width: 9vw;
+    height: 9vw;
+    border-right: 1px solid #00000033;
+    padding: 0.5rem 0 0 0.5rem ;
+    position: relative;
+}
+.container-checkout .main-section .item .title{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.container-checkout .main-section .item .quantity{
+    display: flex;
+    align-items: center;
+    border: 1px solid #00000033;
+    padding: 0.5rem 0;
+}
+.container-checkout .main-section .item .quantity button{
+    margin: 0 1.5rem;
+    background-color: #00000000;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0;
+}
+.container-checkout .main-section .item .quantity .value{
+    position: relative;
+    top: 0.2rem;
+}
+.container-checkout .main-section .item .price{
+    font-size: 1.2rem;
+    transform: scaleY(1.2);
+    font-weight: 500;
+}
+
+.container-checkout .total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-right: 3rem;
+}
+.container-checkout .total-price .total-amount{
+    font-size: 2rem;
+    transform: scaleY(1.2);
+    font-weight: 500;
+}
+.container-checkout .total-price .title{
+    font-size: 1.5rem;
+}
+.container-checkout .next-stage button{
+    border-radius: 0;
+    border: 1px solid #a74107;
+    font-weight: 400;
+    padding: 1rem 6vw;
+}
+.container-checkout .next-stage{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    font-size: 1.3rem;
+
+}
+.container-checkout .return{
+    background-color: #00000000;
+    color: #a74107;
+
+
+}
+.container-checkout .checkout{
+    background-color: #a74107;
+}

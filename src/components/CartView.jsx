@@ -16,7 +16,7 @@ const CartView = () => {
 						</div>
 						<hr
 							style={{
-								width: "10vw",
+								width: "5vw",
 								color: "#00000066",
 							}}
 						/>
@@ -27,7 +27,7 @@ const CartView = () => {
 						</div>
 						<hr
 							style={{
-								width: "10vw",
+								width: "5vw",
 								color: "#00000066",
 							}}
 						/>

@@ -7,6 +7,7 @@
 
 .container-n-a .heading {
 	font-size: 10vw;
+	font-weight: 500;
 	margin: 0;
 }
 
@@ -18,7 +19,7 @@
 		"main-image image1 image2"
 		"main-image image3 image4";
 }
-.container-n-a .content .main-image img{
+.container-n-a .content .main-image img {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -70,23 +71,23 @@
 }
 
 .container-n-a .love-btn img {
-	  max-width: 60%;
-	  height: auto;
+	max-width: 60%;
+	height: auto;
 }
 .container-n-a .details {
 	align-self: flex-end;
-    text-align: left;
+	text-align: left;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 100%;
 }
-.container-n-a .item-price{
+.container-n-a .item-price {
 	font-weight: 600;
 	transform: scaleY(1.2);
 }
 
-.container-n-a .details .lower-section{
+.container-n-a .details .lower-section {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -97,9 +98,53 @@
 	height: 100%;
 	width: auto;
 	object-fit: cover;
-    border-radius: 100%;
-    background-color: #F4F1F1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	border-radius: 100%;
+	background-color: #f4f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 800px) {
+	.container-n-a .content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"image1 image2"
+			"image3 image4";
+	}
+	.container-n-a .content .main-image {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.container-n-a .content img {
+		max-width: 50%;
+		max-height: 14rem;
+		width: auto;
+		height: auto;
+		object-fit: cover;
+	}
+	.container-n-a .main-image {
+		display: none;
+	}
+}
+@media screen and (max-width: 670px) {
+	.container-n-a .heading {
+		font-size: 8vw;
+		margin-bottom: 1rem;
+	}
+	.container-n-a .content img {
+		max-width: 70%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container-n-a .content {
+		grid-template-columns: repeat(1, 0.8fr);
+		width: 100%;
+		justify-content: center;
+		grid-template-areas:
+			"image1"
+			"image2"
+			"image3"
+			"image4";
+	}
 }

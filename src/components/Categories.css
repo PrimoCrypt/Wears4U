@@ -6,7 +6,7 @@
 }
 
 .container-catgry > .heading {
-	font-size: 10vw;
+	font-size: 8vw;
 	font-weight: 500;
 	margin: 0;
 	color: #292929;
@@ -58,4 +58,19 @@
 	.container-catgry .content .picture img{
         max-width: 100%;
 	}
+}
+
+@media screen and (max-width: 620px){
+    .container-catgry .content {
+        flex-direction: column;
+  
+
+    }
+    .container-catgry .content .picture {
+        display: flex;
+        justify-content: center;
+        border: 0.5px solid #bdbdbd;
+        border-bottom: none;
+		padding: 0;
+    }
 }

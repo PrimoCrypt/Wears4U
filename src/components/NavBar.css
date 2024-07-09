@@ -24,6 +24,9 @@
 	background-color: #f7f5e9;
 	height: 5rem;
 }
+.navbar .mobile{
+	display: none;
+}
 .navbar a {
 	margin: 0 0 0 1.8vw;
 	color: #3d3d3d;
@@ -84,10 +87,54 @@
 	.options .cart {
 		display: none;
 	}
+	.options{
+		display: flex;
+		justify-content: flex-end;
+	}
 	.options .search-icon,
 	.options .profile-icon,
 	.options .cart-icon {
-		display: inline;
+		display: flex;
 		margin-left: 1.5rem;
+	}
+	.navbar .mobile{
+		display: flex;
+	}
+	.navbar .desktop{
+		display: none;
+	}
+	.container-bv .text-content {
+		font-size: 5rem;
+	}
+	.container-bv .invite-for-perks {
+		font-size: 0.9rem;
+	}
+	.container-bv .shop{
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+	}
+	.container-bv .just-launched {
+		position: relative;
+		top: 1rem;
+	}
+}
+@media screen and (max-width: 540px) {
+	.options{
+		width: 25vw;
+		justify-content: space-between;
+	}
+	.categories{
+		width: 25vw;
+	}
+	.navbar .options a{
+		display: flex;
+		justify-content: center;
+		width: 25px;
+		height: 25px;
+		box-sizing: border-box;
+	}
+	.navbar .options a img{
+		width: auto;
+		height: auto;
 	}
 }

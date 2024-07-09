@@ -8,15 +8,18 @@ const NavBar = () => {
 				<p>Promo: Free shipping on every order!!!</p>
 			</div>
 			<div className="navbar">
-				<div className="categories">
+				<div className="categories mobile">
+					<img src="./images/icons/menu.png" alt="" />
+				</div>
+				<div className="categories desktop">
 					<a href="#">MEN</a>
 					<a href="#">WOMEN</a>
 					<a href="#">BABY&KIDS</a>
 					<a href="#">SALE</a>
 				</div>
 				<div className="logo">
-					<img src="./images/icons/logo.png" alt="" />
 					<Link to="/">
+					<img src="./images/icons/logo.png" alt="" />
 						<p className="logo-text">
 							Wears4<span className="u">U</span>
 						</p>

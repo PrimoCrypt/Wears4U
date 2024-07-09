@@ -201,3 +201,8 @@
     background-color: #a74107;
     margin-left: 0.5rem;
 }
+@media screen and (max-width: 480px){
+    .container-checkout{
+        width: 100vw;
+    }
+}

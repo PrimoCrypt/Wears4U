@@ -152,3 +152,9 @@
 .container-cart .checkout{
     background-color: #a74107;
 }
+
+@media screen and (max-width: 480px){
+    .container-cart{
+        width: 100vw;
+    }
+}

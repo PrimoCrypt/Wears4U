@@ -38,8 +38,10 @@ const CartView = () => {
 						</div>
 					</div>
 					<div className="right">
-						<img src="./images/icons/trash.png" alt="" />
-						<p className="clear-cart">Clear cart</p>
+						<div className="clear" onClick={""}>
+							<img src="./images/icons/trash.png" alt=""  />
+							<p className="clear-cart">Clear cart</p>
+						</div>
 						<img src="./images/icons/exit.png" alt="" />
 					</div>
 				</div>

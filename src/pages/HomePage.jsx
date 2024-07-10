@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import BestSellers from "../components/BestSellers"
 import BlogView from "../components/BlogView"
 import Categories from "../components/Categories"
@@ -8,10 +9,13 @@ import NavBar from "../components/NavBar"
 import NewArrivals from "../components/NewArrivals"
 import WomenCollection from "../components/WomenCollection"
 
-const HomePage = () => {
+
+
+
+const HomePage = ({toggleModal, router}) => {
 	return (
 		<>
-			<NavBar />
+			<NavBar toggleModal={toggleModal} router={router}/>
 			<MainView />
 			<NewArrivals />
 			<BestSellers />
@@ -22,6 +26,10 @@ const HomePage = () => {
 			<Footer />
 		</>
 	)
+}
+HomePage.propTypes = {
+	toggleModal: PropTypes.func.isRequired,
+	router: PropTypes.object.isRequired
 }
 
 export default HomePage

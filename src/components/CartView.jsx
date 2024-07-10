@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
-import NavBar from "./NavBar"
+// import NavBar from "./NavBar"
 import "./CartView.css"
 
 const CartView = () => {
 	return (
 		<div>
-			<NavBar />
+			{/* <NavBar /> */}
 			<div className="container-cart">
 				<div className="top-section">
 					<div className="left">
-						<div className="cart-identifier">
+						<div className="cart-identifier current">
 							<img src="./images/icons/arrow-down.png" alt="" />
 							<p className="initial-progress">1</p>
 							<p className="title-text">Cart</p>
@@ -39,10 +39,12 @@ const CartView = () => {
 					</div>
 					<div className="right">
 						<div className="clear" onClick={""}>
-							<img src="./images/icons/trash.png" alt=""  />
+							<img src="./images/icons/trash.png" alt="" />
 							<p className="clear-cart">Clear cart</p>
 						</div>
-						<img src="./images/icons/exit.png" alt="" />
+						<div className="exit-btn">
+							<img className="exit" src="./images/icons/exit.png" alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="main-section">
@@ -111,4 +113,5 @@ const CartView = () => {
 		</div>
 	)
 }
+
 export default CartView

@@ -1,5 +1,5 @@
 .container-checkout {
-	padding: 0 1rem 0 2rem;
+	padding:0 2rem;
 	text-align: center;
 	background: #f7f5e9;
 	color: #292929;
@@ -21,6 +21,9 @@
 	flex-direction: column;
 	align-items: center;
 }
+.container-checkout .left .current{
+    color: #a74107;
+}
 .container-checkout .top-section .initial-progress {
 	display: flex;
 	justify-content: center;
@@ -28,8 +31,9 @@
 	background-color: #a74107;
 	border: none;
 	border-radius: 50%;
-	width: 2rem;
-	height: 2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+    font-size: 0.8rem;
 	color: white;
 }
 .container-checkout .top-section .progress {
@@ -39,15 +43,35 @@
 	background-color: #ffffff00;
 	border: 1px solid #00000066;
 	border-radius: 50%;
-	width: 2rem;
-	height: 2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+    font-size: 0.8rem;
 }
-.container-checkout .top-section .inactive {
+.container-cart .title-text{
+    font-size: 0.8rem;
+}
+.container-checkout .left .inactive {
 	padding-top: 20px;
+}
+.container-checkout .right .inactive .title-text{
+    color: #BDBDBD;
 }
 .container-checkout .top-section .right {
 	display: flex;
 	align-items: center;
+}
+.container-checkout .top-section .right  .clear{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+	padding: 0.5rem 0 0.5rem 0rem;
+	border-radius: 10px;
+}
+.container-checkout .top-section .right  .clear:hover{
+	background-color: #7af0ff;
+	color: black;
+	filter: invert(100%);
 }
 .container-checkout .top-section .right img {
 	margin: 0 1vw;
@@ -56,6 +80,14 @@
 .container-checkout .top-section .title-text {
     font-weight: 300px;
     font-size: 1.1vw;
+}
+
+.container-checkout .top-section .right .exit:hover{
+	filter: brightness(70%);
+}
+.container-checkout .top-section .right .exit:active{
+	filter: brightness(85%);
+	transform: scale(1.2, 1.2);
 }
 .container-checkout .main-section{
     margin-top: 3rem;
@@ -230,7 +262,7 @@
     .each-address-price{
         font-size: 4.5vw;
     }
-    .top-section .title-text {
+    /* .top-section .title-text {
         
-    }
+    } */
 }

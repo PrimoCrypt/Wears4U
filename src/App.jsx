@@ -13,11 +13,17 @@ const router = createBrowserRouter([
 	},
 ])
 
+
+
+
 const App = () => {
 	const [modal, setModal] = useState(false)
 
 	const toggleModal = () => {
 		setModal(!modal)
+	}
+	if (window.location.pathname != "/" && !modal) {
+		window.location.pathname = "/"
 	}
 	console.log(modal)
 
@@ -35,9 +41,9 @@ const App = () => {
 						<button className="close-modal" onClick={toggleModal}>
 							CLOSE
 						</button>
-						if (condition) {
+						{/* if (condition) {
 							
-						}
+						} */}
 						<div className="container-cart">
 							<div className="top-section">
 								<div className="left">

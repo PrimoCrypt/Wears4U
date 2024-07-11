@@ -1,5 +1,5 @@
 .container-cart {
-	padding: 0 2rem;
+	padding: 1rem 2rem 0 3rem;
 	text-align: center;
 	background: #f7f5e9;
 	color: #292929;
@@ -166,9 +166,17 @@
 	padding: 1rem;
 	font-size: 1rem;
 }
+.container-cart .return{
+	margin-right: 0.5rem;
+	width: 100%;
+}
+.container-cart .checkout{
+	margin-left: 0.5rem;
+	width: 100%;
+}
 .container-cart .next-stage {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	margin: 3rem 0;
 	font-size: 1.3rem;
 }

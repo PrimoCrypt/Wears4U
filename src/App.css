@@ -46,9 +46,11 @@ button:active {
 	transform: scale(1.1);
 	filter: opacity(0.5);
 }
+.love-btn{
+  filter: hue-rotate(0deg);
+}
 .love-btn:hover {
-	/* filter: opacity(0.5); */
-	transform: scale(1.1);
+ 	transform: scale(1.1);
 }
 .love-btn:active {
 	transform: scale(1.3) rotate(10deg);

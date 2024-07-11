@@ -63,3 +63,12 @@ button:active {
 	filter: opacity(0.8);
 	transform: scale(1.03);
 }
+.container-bv{
+    background: url("./images/Frame-1000003714.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100vw;
+    max-height: 120vh;
+    overflow: hidden;
+}

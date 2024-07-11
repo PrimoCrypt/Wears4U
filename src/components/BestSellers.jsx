@@ -1,6 +1,12 @@
+/* eslint-disable react/prop-types */
 import "./BestSellers.css"
 
-const BestSellers = () => {
+const BestSellers = ({ toggleModal, modal }) => {
+	// console.log(modal)
+	const toggleCart = () => {
+		console.log(modal)
+		toggleModal(1)
+	}
 	return (
 		<div className="container-bs">
 			<h1 className="heading">BEST SELLERS</h1>
@@ -14,7 +20,11 @@ const BestSellers = () => {
 						<p className="item-name">TEE SHIRT</p>
 						<div className="lower-section">
 							<p className="item-price">$19</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -27,7 +37,11 @@ const BestSellers = () => {
 						<p className="item-name">CARTON PANT</p>
 						<div className="lower-section">
 							<p className="item-price">$29</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -40,7 +54,11 @@ const BestSellers = () => {
 						<p className="item-name">BURBERRY BARREL BAG</p>
 						<div className="lower-section">
 							<p className="item-price">$1800</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -53,7 +71,11 @@ const BestSellers = () => {
 						<p className="item-name">BOMBER SWEATER</p>
 						<div className="lower-section">
 							<p className="item-price">$249</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -66,7 +88,11 @@ const BestSellers = () => {
 						<p className="item-name">GUCCI VANITY BAG</p>
 						<div className="lower-section">
 							<p className="item-price">$2200</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -79,7 +105,11 @@ const BestSellers = () => {
 						<p className="item-name">GiINGHAM SHOERT</p>
 						<div className="lower-section">
 							<p className="item-price">$80</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -92,7 +122,11 @@ const BestSellers = () => {
 						<p className="item-name">STIO WOMEN&apos;S COLTER</p>
 						<div className="lower-section">
 							<p className="item-price">$53</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -105,7 +139,11 @@ const BestSellers = () => {
 						<p className="item-name">Calvin Klein Metal Cap</p>
 						<div className="lower-section">
 							<p className="item-price">$53</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>

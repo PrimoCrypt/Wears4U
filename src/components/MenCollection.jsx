@@ -1,6 +1,12 @@
+/* eslint-disable react/prop-types */
 import "./MenCollection.css"
 
-const MenCollection = () => {
+const MenCollection = ({ toggleModal, modal }) => {
+	// console.log(modal)
+	const toggleCart = () => {
+		console.log(modal)
+		toggleModal(1)
+	}
 	return (
 		<div className="container-mc">
 			<div className="heading">
@@ -23,7 +29,11 @@ const MenCollection = () => {
 						<p className="item-name">QUIET LUXURY HOODIE</p>
 						<div className="lower-section">
 							<p className="item-price">$500</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -36,7 +46,11 @@ const MenCollection = () => {
 						<p className="item-name">LEATHER BIKER JACKET</p>
 						<div className="lower-section">
 							<p className="item-price">$128</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -49,7 +63,11 @@ const MenCollection = () => {
 						<p className="item-name">BERSHKA CAPRI HOODIE</p>
 						<div className="lower-section">
 							<p className="item-price">$23</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -61,8 +79,12 @@ const MenCollection = () => {
 					<div className="details">
 						<p className="item-name">BROWN JOGGERS</p>
 						<div className="lower-section">
-						<p className="item-price">$26</p>
-							<img src="./images/icons/shopping-cart.png" alt="" />
+							<p className="item-price">$26</p>
+							<img
+								src="./images/icons/shopping-cart.png"
+								alt=""
+								onClick={toggleCart}
+							/>
 						</div>
 					</div>
 				</div>
@@ -71,4 +93,6 @@ const MenCollection = () => {
 		</div>
 	)
 }
+
+
 export default MenCollection

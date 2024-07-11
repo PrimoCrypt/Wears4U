@@ -75,6 +75,9 @@
     }
 }
 @media screen and (max-width: 480px){
+	.container-catgry{
+		padding: 3rem 3rem 0;
+	}
 	.container-catgry .catgry-names {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

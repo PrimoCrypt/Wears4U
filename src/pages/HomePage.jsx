@@ -8,14 +8,49 @@ import MenCollection from "../components/MenCollection"
 import NavBar from "../components/NavBar"
 import NewArrivals from "../components/NewArrivals"
 import WomenCollection from "../components/WomenCollection"
+import { useState } from "react"
+import CartView from "../components/CartView"
+import CheckoutView from "../components/CheckoutView"
 
 
+const HomePage = () => {
+	const [modal, setModal] = useState(0)
 
 
-const HomePage = ({toggleModal, router}) => {
+	const toggleModal = (number) => {
+		setModal(number)
+	}
 	return (
 		<>
-			<NavBar toggleModal={toggleModal} router={router}/>
+			{modal === 1 && (
+				<div className="modal">
+					<div
+						onClick={() => {
+							toggleModal(0)
+						}}
+						className="overlay"
+					></div>
+					<div className="modal-content">
+						<CartView toggleModal={toggleModal} />
+					</div>
+				</div>
+			)}
+
+			{modal === 2 && (
+				<div className="modal">
+					<div
+						onClick={() => {
+							toggleModal(0)
+						}}
+						className="overlay"
+					></div>
+					<div className="modal-content">
+						<CheckoutView toggleModal={toggleModal} />
+					</div>
+				</div>
+			)}
+
+			<NavBar toggleModal={toggleModal} modal={modal} />
 			<MainView />
 			<NewArrivals />
 			<BestSellers />
@@ -28,8 +63,7 @@ const HomePage = ({toggleModal, router}) => {
 	)
 }
 HomePage.propTypes = {
+	modal: PropTypes.bool.isRequicheckoutred,
 	toggleModal: PropTypes.func.isRequired,
-	router: PropTypes.object.isRequired
 }
-
 export default HomePage

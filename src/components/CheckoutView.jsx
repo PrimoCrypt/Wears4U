@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import NavBar from "./NavBar"
 import "./CheckoutView.css"
 
-const CheckoutView = () => {
+const CheckoutView = ({toggleModal}) => {
 	return (
 		<div>
 			<NavBar />
@@ -43,7 +44,9 @@ const CheckoutView = () => {
 					<div className="right">
 						<img src="./images/icons/trash.png" alt="" />
 						<p className="clear-cart">Clear cart</p>
-						<img src="./images/icons/exit.png" alt="" />
+						<img src="./images/icons/exit.png" onClick={() => {
+							toggleModal(0)
+						}} alt="" />
 					</div>
 				</div>
 				<div className="main-section">

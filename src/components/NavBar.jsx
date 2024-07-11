@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
 import "./NavBar.css"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
-
-
-const NavBar = ({toggleModal, router}) => {
-
+const NavBar = ({ toggleModal, modal }) => {
+	// console.log(modal)
+	const toggleCart = () => {
+		console.log(modal)
+		toggleModal(1)
+	}
 	return (
 		<div className="container">
 			<div className="promo">
@@ -22,7 +24,7 @@ const NavBar = ({toggleModal, router}) => {
 					<a href="#">SALE</a>
 				</div>
 				<div className="logo">
-					<Link to="/" router={router}>
+					<Link to="/">
 						<img src="./images/icons/logo.png" alt="" />
 						<p className="logo-text">
 							Wears4<span className="u">U</span>
@@ -36,18 +38,18 @@ const NavBar = ({toggleModal, router}) => {
 							<img src="./images/icons/search-normal.png" alt="" />
 						</span>
 					</a>
-					<Link  to="/">
+					<Link to="/">
 						<span className="account">ACCOUNT</span>
 						<span className="profile-icon">
 							<img src="./images/icons/profile.png" />
 						</span>
 					</Link>
-					<Link to="/cart" className="cart-container" onClick={toggleModal}>
+					<div className="cart-container" onClick={toggleCart}>
 						<span className="cart">CART(4)</span>
 						<span className="cart-icon">
 							<img src="./images/icons/shopping-cart.png" alt="" />
 						</span>
-					</Link>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,7 +57,7 @@ const NavBar = ({toggleModal, router}) => {
 }
 NavBar.propTypes = {
 	toggleModal: PropTypes.func.isRequired,
-	router: PropTypes.object.isRequired
+	modal: PropTypes.bool.isRequired,
 }
 
 export default NavBar

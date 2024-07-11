@@ -111,7 +111,6 @@
 		justify-content: flex-end;
 	}
 	.options .search-icon,
-	.options .profile-icon,
 	.options .cart-icon {
 		display: flex;
 		margin-left: 1.5rem;

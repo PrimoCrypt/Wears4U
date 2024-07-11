@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
+/* eslint-disable react/prop-types */
+// import { Link } from "react-router-dom"
 // import NavBar from "./NavBar"
 import "./CartView.css"
 
-const CartView = () => {
+const CartView = ({ toggleModal }) => {
 	return (
 		<div>
 			{/* <NavBar /> */}
@@ -42,7 +43,12 @@ const CartView = () => {
 							<img src="./images/icons/trash.png" alt="" />
 							<p className="clear-cart">Clear cart</p>
 						</div>
-						<div className="exit-btn">
+						<div
+							className="exit-btn"
+							onClick={() => {
+								toggleModal(0)
+							}}
+						>
 							<img className="exit" src="./images/icons/exit.png" alt="" />
 						</div>
 					</div>
@@ -104,9 +110,14 @@ const CartView = () => {
 					</div>
 					<div className="next-stage">
 						<button className="return">Continue Shopping</button>
-						<Link to="/checkout">
-							<button className="checkout">Process to Checkout</button>
-						</Link>
+						<button
+							className="checkout"
+							onClick={() => {
+								toggleModal(2)
+							}}
+						>
+							Process to Checkout
+						</button>
 					</div>
 				</div>
 			</div>

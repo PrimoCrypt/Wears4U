@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
-import NavBar from "./NavBar"
 import "./CheckoutView.css"
 
 const CheckoutView = ({toggleModal}) => {
 	return (
 		<div>
-			<NavBar />
 			<div className="container-checkout">
 				<div className="top-section">
 					<div className="left">

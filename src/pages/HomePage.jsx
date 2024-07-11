@@ -52,11 +52,11 @@ const HomePage = () => {
 
 			<NavBar toggleModal={toggleModal} modal={modal} />
 			<MainView />
-			<NewArrivals />
-			<BestSellers />
+			<NewArrivals toggleModal={toggleModal} modal={modal} />
+			<BestSellers toggleModal={toggleModal} modal={modal} />
 			<BlogView />
-			<MenCollection />
-			<WomenCollection />
+			<MenCollection toggleModal={toggleModal} modal={modal} />
+			<WomenCollection toggleModal={toggleModal} modal={modal} />
 			<Categories />
 			<Footer />
 		</>

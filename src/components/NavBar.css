@@ -121,20 +121,7 @@
 	.navbar .desktop{
 		display: none;
 	}
-	.container-bv .text-content {
-		font-size: 5rem;
-	}
-	.container-bv .invite-for-perks {
-		font-size: 0.9rem;
-	}
-	.container-bv .shop{
-		padding: 1rem 2rem;
-		font-size: 1.1rem;
-	}
-	.container-bv .just-launched {
-		position: relative;
-		top: 1rem;
-	}
+	
 }
 @media screen and (max-width: 540px) {
 	.navbar .logo-text{

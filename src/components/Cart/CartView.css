@@ -5,6 +5,7 @@
 	color: #292929;
 	width: 50vw;
 	float: right;
+	min-height: 100vh;
 }
 
 .container-cart .top-section {
@@ -15,6 +16,11 @@
 .container-cart .top-section .left {
 	display: flex;
 	align-items: center;
+}
+.container-cart .remove-item{
+	color: red;
+	margin:0 0 0 0.5rem ;
+	cursor: pointer;
 }
 .container-cart .cart-identifier {
 	display: flex;

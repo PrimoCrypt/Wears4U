@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import "./NavBar.css"
 import PropTypes from "prop-types"
@@ -57,7 +58,7 @@ const NavBar = ({ toggleModal, modal }) => {
 }
 NavBar.propTypes = {
 	toggleModal: PropTypes.func.isRequired,
-	modal: PropTypes.bool.isRequired,
+	modal: PropTypes.number.isRequired,
 }
 
 export default NavBar

@@ -43,7 +43,7 @@ const HomePage = () => {
 
 	return (
 		<>
-			{modal === 0 && (
+			{modal === 1 && (
 				<div className="modal">
 					<div
 						onClick={() => {

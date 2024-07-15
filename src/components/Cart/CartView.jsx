@@ -7,14 +7,15 @@ import "./CartView.css"
 import { useGlobalContext } from "../../context/context"
 
 const CartView = ({ toggleModal }) => {
-	const { itemsMap } = useGlobalContext()
-
+	const { state } = useGlobalContext()
+	console.log(state)
+	const itemsMap = state.cart
 	// if (loading) {
 	// 	return <h1> Loading...</h1>
-	// }
-	const cartItemsArray = Array.from(itemsMap.entries())
+	// }	
+	const cartItemsArray = Array.from(itemsMap.entries());
 	// const cartArray = cartItemsArray?.slice(0, 4)
-	console.log(itemsMap)
+	// console.log(itemsMap)
 	if (cartItemsArray.length === 0) {
 		return (
 			<div>

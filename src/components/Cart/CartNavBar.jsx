@@ -1,5 +1,9 @@
+import { CLEAR_CART } from "../../actions"
+import { useGlobalContext } from "../../context/context"
+
 /* eslint-disable react/prop-types */
 const CartNavBar = ({ toggleModal }) => {
+	const { clearCart } = useGlobalContext()
 	return (
 		<>
 			<div className="top-section">
@@ -33,7 +37,7 @@ const CartNavBar = ({ toggleModal }) => {
 					</div>
 				</div>
 				<div className="right">
-					<div className="clear" onClick={""}>
+					<div className="clear" onClick={()=>clearCart(CLEAR_CART)}>
 						<img src="./images/icons/trash.png" alt="" />
 						<p className="clear-cart">Clear cart</p>
 					</div>

@@ -23,7 +23,7 @@ const AppContext = createContext()
 
 const initialState = {
 	loading: false,
-	item: [],
+	items: itemsAsMap,
 	cart: itemsAsMap,
 }
 // console.log(items)

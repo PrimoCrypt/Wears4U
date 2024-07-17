@@ -16,7 +16,7 @@
     display: grid;
     /* gap: 2rem; */
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: 0.5fr 0.5fr; */
+    grid-template-rows: 0.5fr 0.5fr;
     /* grid-template-areas: 
         "main-image image1 image2"
         "main-image image3 image4"; */
@@ -38,14 +38,7 @@
 } */
 
 
-.container-bs .image1,
-.container-bs .image2,
-.container-bs .image3,
-.container-bs .image4,
-.container-bs .image5,
-.container-bs .image6,
-.container-bs .image7,
-.container-bs .image8 {
+.container-bs .image {
     padding: 1rem;
     border: 0.5px solid #BDBDBD;
     display: flex;
@@ -53,14 +46,7 @@
     justify-content: space-between;
     align-items: center;
 }   
-.container-bs .image1 .love-btn,
-.container-bs .image2 .love-btn,
-.container-bs .image3 .love-btn,
-.container-bs .image4 .love-btn,
-.container-bs .image5 .love-btn,
-.container-bs .image6 .love-btn,
-.container-bs .image7 .love-btn,
-.container-bs .image8 .love-btn{
+.container-bs .image .love-btn{
     align-self: flex-end;
     width: 2rem;
     height: 2rem;
@@ -74,14 +60,7 @@
     max-width: 60%;
 }
 
-.container-bs .image1 .details,
-.container-bs .image2 .details,
-.container-bs .image3 .details,
-.container-bs .image4 .details,
-.container-bs .image5 .details,
-.container-bs .image6 .details,
-.container-bs .image7 .details,
-.container-bs .image8 .details{
+.container-bs .image .details{
     align-self: flex-end;
     text-align: left;
 	display: flex;

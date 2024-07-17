@@ -16,8 +16,8 @@
 	grid-template-columns: 1fr 0.5fr 0.5fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
-		"main-image image1 image2"
-		"main-image image3 image4";
+		"main-image image image"
+		"main-image image image";
 }
 .container-n-a .content .main-image img {
 	max-width: 100%;
@@ -32,10 +32,7 @@
 }
 
 .container-n-a .main-image,
-.container-n-a .image1,
-.container-n-a .image2,
-.container-n-a .image3,
-.container-n-a .image4 {
+.container-n-a .image {
 	padding: 1rem;
 	border: 0.5px solid #bdbdbd;
 	display: flex;
@@ -108,10 +105,7 @@
 	.container-n-a .content {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas:
-			"image1 image2"
-			"image3 image4";
-	}
+
 	.container-n-a .content .main-image {
 		max-width: 100%;
 		max-height: 100%;
@@ -144,10 +138,5 @@
 		grid-template-columns: repeat(1, 1fr);
 		width: 100%;
 		justify-content: center;
-		grid-template-areas:
-			"image1"
-			"image2"
-			"image3"
-			"image4";
-	}
+
 }

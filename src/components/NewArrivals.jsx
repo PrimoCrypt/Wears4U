@@ -1,6 +1,6 @@
 import { useGlobalContext } from "../context/context"
-import "./NewArrivals.css"
 import EachItem from "./EachItem"
+import "./NewArrivals.css"
 
 // eslint-disable-next-line react/prop-types
 const NewArrivals = () => {

@@ -16,7 +16,7 @@ const EachItem = ({ id, name, photos, current_price }) => {
 					<p className="item-name">{name}</p>
 					<div className="lower-section">
 						<p className="item-price">${finalPrice}</p>
-						<img src="./images/icons/shopping-cart.png" alt="" onClick={""} />
+						<img src="./images/icons/shopping-cart.png" alt="" onClick={console.log(id)} />
 					</div>
 				</div>
 			</div>

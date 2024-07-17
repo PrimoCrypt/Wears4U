@@ -8,12 +8,9 @@ import {
 	createContext,
 	useState,
 } from "react"
-import reducer from "../reducer"
 import axios from "axios"
-import { items } from "../data/data"
-
-// import { fetchData } from "../data/data"
-
+import { itemsAsMap } from "../data/data"
+import reducer from "../reducer"
 import {
 	CLEAR_CART,
 	REMOVE,
@@ -24,24 +21,28 @@ import {
 } from "../actions"
 
 const AppContext = createContext()
-
+// const cart = new Map(items)
+console.log(itemsAsMap)
 const initialState = {
 	loading: false,
-	items,
-	cart: items
+	item: [],
+	cart: itemsAsMap,
 }
+// console.log(items)
 
 export const AppProvider = ({ children }) => {
 	// console.log(items)
 	// console.log(fetchProducts())
 	const [state, dispatch] = useReducer(reducer, initialState)
-	const clearCart =() => {
-		dispatch({type: CLEAR_CART})
+	const clearCart = () => {
+		dispatch({ type: CLEAR_CART })
+	}
+	const removeItem = (id) => {
+		dispatch({ type: REMOVE, payload: { id } })
 	}
 
-	
 	return (
-		<AppContext.Provider value={{ state, clearCart }}>
+		<AppContext.Provider value={{ ...state, clearCart, removeItem }}>
 			{children}
 		</AppContext.Provider>
 	)

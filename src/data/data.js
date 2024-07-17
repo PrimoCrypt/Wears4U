@@ -7,13 +7,32 @@ const url =
 const fetchData = async () => {
 	try {
 		const { data } = await axios(url)
-		const items = new Map(Object.entries(data.items))
+		const items = data?.items
 		return items
 		// setItems(data ? new Map(Object.entries(data.items)) : new Map())
 	} catch (error) {
 		console.log(error.response)
 	}
 }
-export const items = await fetchData()
+const storeData = async () => {
+    const items = await fetchData();
+    if (items) {
+        localStorage.setItem("cartItems", JSON.stringify(items));
+    }
+}
+storeData()
+const getStoredData = () => {
+	const storedItems = localStorage.getItem("cartItems")
+	if (storedItems) {
+		return JSON.parse(storedItems)
+	} else {
+		return [] // Return empty array if no data found
+	}
+}
+const newItems = getStoredData()
 
+//  Creating a new Map instance
+const itemsWithKey = newItems.map((item)=> [item.id, item]);
+
+export const itemsAsMap = new Map(itemsWithKey)
 

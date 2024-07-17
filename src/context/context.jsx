@@ -8,7 +8,6 @@ import {
 	createContext,
 	useState,
 } from "react"
-import axios from "axios"
 import { itemsAsMap } from "../data/data"
 import reducer from "../reducer"
 import {
@@ -21,8 +20,7 @@ import {
 } from "../actions"
 
 const AppContext = createContext()
-// const cart = new Map(items)
-console.log(itemsAsMap)
+
 const initialState = {
 	loading: false,
 	item: [],
@@ -31,8 +29,6 @@ const initialState = {
 // console.log(items)
 
 export const AppProvider = ({ children }) => {
-	// console.log(items)
-	// console.log(fetchProducts())
 	const [state, dispatch] = useReducer(reducer, initialState)
 	const clearCart = () => {
 		dispatch({ type: CLEAR_CART })
